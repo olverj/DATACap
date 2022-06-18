@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+ <html> 
+<head> 
+<title>DATACap</title> 
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"> 
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"> 
+<link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'> 
+</head> 
+<body> 
+<div class='jumbotron'> 
+<h1>DATACap</h1>
+ </div> 
+   <nav class="navbar navbar-default"> 
+   <div class="container-fluid">
+<div class="navbar-header"> 
+<a class="navbar-brand" href="{% url 'index' %}">Research Projects</a> 
+</div> 
+<ul class="nav navbar-nav"> 
+<li><a href="{% url 'treatments' %}">Studies</a></li>
+<li><a href="{% url 'demographics' %}">Subjects</a></li>
+<li><a href="{% url 'newsubject' %}">Add Subject</a></li>
+<li><a href="{% url 'newhistory' %}">Add Subject History</a></li>
+<li><a href="{% url 'newstudy' %}">Add Study</a></li>
+<li><a href="{% url 'newdiagnostic' %}">Add Diagnostic</a></li>
+<li><a href="{% url 'newtimepoint' %}">Add Timepoint</a></li>
+<li><a href="{% url 'login' %}">Login</a></li>
+<li><a href="{% url 'logout' %}">Logout</a></li>
+</ul> 
+</div> 
+</nav> 
+<div class="container-fluid"> 
+{% block content %} 
+
+{% endblock content %} 
+</div> 
+</body> 
+</html>

@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Timepoint Details</h2>
+<br>
+<ul>
+    Timepoint : {{ tp.timepoint }}</br>
+    Subject Name: {{ tp.subject_administration }}</br>
+    Study : {{ tp.admin_tx }}</br>
+    Administered by: {{ tp.user }}</br>
+    Administration date: {{ tp.admin_date }}</br>
+    Administration Start Time: {{ tp.admin_starttime }}</br>
+    Administration End Time : {{ tp.admin_endtime }}</br>
+    Details about administration : {{ tp.admin_description }}</br>
+</ul>
+
+{% endblock %}

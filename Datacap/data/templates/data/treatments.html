@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Treatments</h2>
+<ul>
+    {% for t in tx_name %}
+    <li><a href="{% url 'txdetails' id=t.id %}"> {{ t.tx_name }}</a></li>
+    {% endfor %}
+</ul>
+
+
+{% endblock %}

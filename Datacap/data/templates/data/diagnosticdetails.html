@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Diagnostic Details</h2>
+<ul>
+    Diagnostic Name : {{ diag.diag_name }}</br>
+    Subject Name : {{ diag.subject_diagnostics }}</br>
+    Treatment : {{ diag.dx_tx }}</br>
+    Collection Date : {{ diag.diag_date }}</br>
+    Collection Time : {{ diag.diag_coll_time }}</br>
+</br>
+</br>
+<div class="column">
+    <h3>Diagnostic Name and Value</h3>
+    <p> {{ diag.labname1 }}   {{ diag.labval1 }}</p>
+    <p> {{ diag.labname2 }}   {{ diag.labval2 }}</p>
+    <p> {{ diag.labname3 }}   {{ diag.labval3 }}</p>
+    <p> {{ diag.labname4 }}   {{ diag.labval4 }}</p>
+    <p> {{ diag.labname5 }}   {{ diag.labval5 }}</p>
+    <p> {{ diag.labname6 }}   {{ diag.labval6 }}</p>
+    <p> {{ diag.labname7 }}   {{ diag.labval7 }}</p>
+    <p> {{ diag.labname8 }}   {{ diag.labval8 }}</p>
+    <p> {{ diag.labname9 }}   {{ diag.labval9 }}</p>
+    
+</div>
+</ul>
+
+{% endblock %}

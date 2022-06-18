@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>Patient Study Records</h2>
+<br>
+<h2>Health Data</h2>
+<ul>
+    {% for s in study_tx %}
+    <li><a href="{% url 'baseline' id=s.id %}"> {{ s.study_tx }}</a></li>
+    {% endfor %}
+</ul>
+<h2>Diagnostic Data</h2>
+<ul>
+    {% for d in diag_name %}
+    <li><a href="{% url 'diagnostics' id=d.id %}"> {{ d.diag_name }}</a></li>
+    {% endfor %}
+</ul>
+<h2>Timepoint Data</h2>
+<ul>
+    {% for t in timepoint %}
+    <li><a href="{% url 'timepoints' id=t.id %}"> {{ t.timepoint }}</a></li>
+    {% endfor %}
+</ul>
+
+{% endblock %}
